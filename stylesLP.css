@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center the form horizontally */
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: rgba(9, 27, 54, 0.884);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    color: #ffffff;
+    position: relative;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    /* Add a transition for the glow effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px 5px #007BFF;
+    /* Add a glow effect on hover */
+}
+
+input {
+    width: 94%;
+    padding: 8px;
+    margin: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.form::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -1;
+}
+
+.form::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.form::before,
+.form::after {
+    background: linear-gradient(235deg, #89ff00, #102368, #00bcd0);
+    border-radius: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    /* Add some spacing above the copyright notice */
+    color: #888;
+    /* Change the color to your preference */
+    font-size: 14px;
+    /* Adjust the font size as needed */
+}
+
+/* stylesLP.css */
+
+.register-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.register-button:hover {
+    background-color: #218838;
+    box-shadow: 0 0 20px 5px #28a745;
+}

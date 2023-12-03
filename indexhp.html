@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styleHP.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Home Page</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="#" class="home-style" style="--i:0">Home</a>
+            <a href="myaccount.html" id="myAccount" class="back-style" style="--i:0">My Account</a>
+            <a href="index.html" class="back-style" style="--i:0">Log Out</a>
+        </nav>
+
+    </header>
+</body>
+
+<div class="back-text">
+    <span>W</span>
+    <span>E</span>
+    <span>L</span>
+    <span>C</span>
+    <span>O</span>
+    <span>M</span>
+    <span>E</span>
+    <span>!</span>
+</div>
+
+<script>
+    let spanTexts = document.getElementsByTagName("span");
+    window.onload = function () {
+        for (spanTexts of spanTexts) {
+            spanTexts.classList.add("active");
+        }
+    }
+    document.getElementById("myAccount").addEventListener("click", function () {
+        window.location.href = "myaccount.html";
+    });
+</script>
+
+</html>

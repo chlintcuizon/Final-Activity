@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="stylesLP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="LoginForm" class="form">
+            <h2>Login Form</h2>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" id="loginButton">Login</button>
+
+            <div class="register-container">
+                <p><i class="fas fa-arrow-down"></i> Register here <i class="fas fa-arrow-down"></i></p>
+                <button type="button" id="registerButton" class="register-button"
+                    onclick="window.location.href='indexreg.html'">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+<footer>
+    &copy; 2023 Anonymous. All rights reserved.
+</footer>
+
+</html>

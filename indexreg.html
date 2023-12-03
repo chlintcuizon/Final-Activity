@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="stylesLP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="RegisterForm" class="form" method="post" action="process_registration.php"
+            onsubmit="return validateForm();">
+
+            <h2>Registration Form</h2>
+            <div class="input-container">
+                <label for="regEmail">Email:</label>
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="regEmail" name="regEmail" required>
+            </div>
+            <div class="input-container">
+                <label for="regName">Username:</label>
+                <i class="fas fa-user"></i>
+                <input type="text" id="regName" name="regName" required>
+            </div>
+            <div class="input-container">
+                <label for="regMobile">Mobile Number:</label>
+                <i class="fas fa-mobile-alt"></i>
+                <input type="tel" id="regMobile" name="regMobile" required>
+            </div>
+            <div class="input-container">
+                <label for="regPassword">Password:</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" id="regPassword" name="regPassword" required>
+            </div>
+            <div class="input-container">
+                <label for="regConfirmPassword">Confirm Password:</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" id="regConfirmPassword" name="regConfirmPassword" required>
+            </div>
+            <button type="submit" id="registerButton">Register</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
